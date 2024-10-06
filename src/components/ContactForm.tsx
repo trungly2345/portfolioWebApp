@@ -1,5 +1,6 @@
-import React from "react";
+//import React from "react";
 
+{/***}
 type Props = {
   FirstName: string;
   LastName: string;
@@ -9,6 +10,8 @@ type Props = {
   phoneNumber: string;
 };
 
+{/*** 
 const ContactForm = (props: Props) => {
   return <div>ContactForm</div>;
 };
+*/}
