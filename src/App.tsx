@@ -5,10 +5,21 @@ import github from "./assets/github.png";
 import { useState } from "react";
 import Button from "./components/Button";
 import me from "./assets/me.jpeg";
+import ContactForm from "./components/ContactForm";
 
 const App: React.FC = () => {
+  const UserProps =  { 
+    FirstName:"John",
+    LastName:"Doe",
+    email:"jdoe223@gmail.com",
+    company:"Meta",
+    message:"Hello, I'm interested in connecting with you",
+    phoneNumber:"451-222-560",
+  
+  };
   const [hoveredLinkedIn, setHoveredLinkedIn] = useState<boolean>(false);
   const [hoveredGitHub, setHoveredGitHub] = useState<boolean>(false);
+  const [ShowContactForm, setShowContactForm] = useState(false);
   const FileUrl = "https://docs.google.com/document/d/1aQwSdBPbMyvyL6wF4sI6zgu16vu4bDYBcRXNVFO-KDY/edit?usp=sharing";
  
 
@@ -18,6 +29,7 @@ const App: React.FC = () => {
     window.open(FileUrl, "_blank");
   };
 
+ 
   // 1 Lifecycle methods (Hooks) - useState(), useEffect()
   // 2 Making components
 
@@ -118,6 +130,7 @@ const App: React.FC = () => {
           <Button
             whenClicked={() => {
               console.log("contact me button clicked");
+              setShowContactForm(true);
             }}
             msg="Contact Me"
           />
@@ -134,8 +147,9 @@ const App: React.FC = () => {
             msg="View Resume"
           />
         </div>
-     
+            {ShowContactForm && <ContactForm{...UserProps} /> }
       </div>
+
     </div>
   );
 };
