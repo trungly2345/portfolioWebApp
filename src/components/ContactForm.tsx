@@ -1,43 +1,67 @@
 
+import { Container } from "@tsparticles/engine";
 import Button from "./Button";
 import { useState } from "react";
 
 type Props = {
   FirstName: string;
-  LastName: string;
   email: string;
   company: string;
   message: string;
-  phoneNumber: string;
 };
 
 
 
 const ContactForm: React.FC<Props> = (props) => {
   //deconstruction of props 
-  const {FirstName, LastName ,email,company,message,phoneNumber} = props;
+ 
 
   const {ExitForm,setExitForm} = useState(false);
 
 
-  return ( <div className="contact-form"> 
-  <h1> First Name {FirstName}</h1>
-  <h2> Last Name{LastName}</h2>
-  <h3> Company {company}</h3>
-  <p>message{message}</p>
-  <p>email{email} </p>
-  <p>phoneNumber {phoneNumber}</p>
-  <div className="btn-group gap-5">
+  return (
+    
+    <div className="contact-form"> 
+    <h1> Contact Me</h1>
+    <p> I look forward to connect! <br></br>
+      I'll get back to you whenever I can!</p>
+    <div className="input-group mb-3 w-50">
+    <input type="text" className="form-control" placeholder="name" aria-describedby="basic-addon1"/>
+    </div>
+    
 
-<Button 
+      <div className="input-group mb-3 w-50"> 
+      <input type="text" className="form-control" placeholder="Email" aria-describedby="basic-addon2"/>
+        </div> 
+
+       <div className="input-group mb-3 w-50"> 
+      <input type="text" className="form-control" placeholder="Employment" aria-describedby="basic-addon2"/>
+        </div> 
+
+        <div className="input-group mb-3 w-50"> 
+        <textarea className="form-control" placeholder="Enter your message here" rows={5}> </textarea>
+       
+        </div> 
+      
+      
+
+   
+   
+<Button
   whenClicked={()=> {
-    console.log("Exited out of the form")
+    console.log("Sent form")
     
   }}
-  msg="Send"
+  msg="Submit form"
   />
-  </div>
-  </div>
+   </div>
+
+
+
+   
+  
+
+  
   );
 };
 

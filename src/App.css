@@ -8,20 +8,37 @@ body{
   background: linear-gradient(45deg,#c9def4, #d7c1e8, #f5ccd4, #e6b3b3, #b8a4c9);
   background-size: 300% 300%;
   animation: gradient 15s ease-in-out infinite;
-  
 }
 
 .contact-form {
   position:relative;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 2px 2px;
-  border-radius: 20px;
-  backdrop-filter: blur(30px);
+  background: linear-gradient(0deg, #b8a4c9,#f5ccd4);
+  border: solid black;
+  border-radius: 30px;
+  backdrop-filter:blur(20px);
   z-index: 1;
   top: -500px;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 700px;
+  word-spacing: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: -150px;
+  
 }
+
+textarea {
+  resize: both; /* Disable resizing of the textarea */
+  min-height: 100px; /* Set a minimum height for the textarea */
+  max-height: 200px; /* Optionally set a maximum height for the textarea */
+  overflow-y: auto; /* Enable vertical scrollbar if content exceeds */
+}
+
+
+
 
 
 @keyframes gradient {
@@ -54,19 +71,15 @@ body{
 
 
 .opener{
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 10px;
-  font-family: 'system-ui';
+  font-family: 'Whitney SSm A','Whitney SSm B',Helvetica,Arial;
   font-size: 330%;
   color: #242b4b;
-  font-weight:150;
+  font-weight:120;
   margin: 40px;
   margin-bottom: 40px;
   word-break: normal;
  
 }
-
 
 
 @media (min-width: 800px) and (max-width: 1444px) {
@@ -99,6 +112,7 @@ body{
 }
 
 
+
 @media (min-width: 1200px) {
   .container{
     max-width: 970px;
@@ -109,7 +123,7 @@ body{
     align-items: center;
     padding: 12.5px;
     border-radius: 10px;
-    
+    margin: -50px;
     
 }
 

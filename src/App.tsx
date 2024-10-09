@@ -109,9 +109,9 @@ const App: React.FC = () => {
         
         
         <p className="openingP border border-dark">
-          Hi, I'm Trung, a first-generation Vietnamese student and Senior in
-          Computer Science at Iowa State University. I'm seeking an internship
-          to enhance my skills in mobile and web app development and broader computer
+          Hello! My name is Trung, and I am a first-generation Vietnamese student in
+          my senior year Computer Science at Iowa State University. I'm seeking an internship
+          to enhance my skills in mobile/web app development and broader computer
           science roles.
         
           <br>

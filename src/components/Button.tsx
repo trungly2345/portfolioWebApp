@@ -19,7 +19,7 @@ const Button = ({ whenClicked, msg }: ButtonProps) => {
     <button
       onClick={whenClicked}
       className="btn btn-outline-dark btn rounded-pill"
-      style={{ padding: "10px", fontFamily: "monospace" , background:" rgba(255, 255, 255, 0.2)", boxShadow:"2px 2px"}}
+      style={{ padding: "10px", fontFamily: "monospace" ,background:"rgba(255, 255, 255, 0.2)", boxShadow:"2px 2px"}}
     >
       {msg}
     </button>
