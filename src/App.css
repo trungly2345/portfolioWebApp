@@ -7,30 +7,31 @@ body{
   height: 130vh;
   background: linear-gradient(45deg,#c9def4, #d7c1e8, #f5ccd4, #e6b3b3, #b8a4c9);
   background-size: 300% 300%;
-  animation: gradient 15s ease-in-out infinite;
+  animation: gradient 10s ease-in-out infinite;
 }
 
-.contact-form {
+.contact-form-container {
   position:relative;
-  background: linear-gradient(0deg, #b8a4c9,#f5ccd4);
+  background: #d7c1e8;
+  box-shadow: 2px 2px;
   border: solid black;
   border-radius: 30px;
   backdrop-filter:blur(20px);
   z-index: 1;
-  top: -500px;
-  width: 600px;
-  height: 700px;
-  word-spacing: normal;
+  top: -600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin: -150px;
+  margin: auto;
   
 }
 
-textarea {
+
+
+.textarea {
   resize: both; /* Disable resizing of the textarea */
   min-height: 100px; /* Set a minimum height for the textarea */
   max-height: 200px; /* Optionally set a maximum height for the textarea */
@@ -126,6 +127,7 @@ textarea {
     margin: -50px;
     
 }
+
 
 
 
