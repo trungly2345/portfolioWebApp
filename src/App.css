@@ -1,6 +1,7 @@
 /* App.css */
 
 
+
 body{
   overflow: auto;
   width: 100%;
@@ -27,6 +28,18 @@ body{
   padding: 20px;
   margin: auto;
   
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-field {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  width: 100%;
+  outline: none;
 }
 
 
@@ -96,7 +109,7 @@ body{
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 10px;
- background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   background-size: 300% 300%;
   color: #242b4b;
   font-family: 'Merriweather',serif;
@@ -130,10 +143,7 @@ body{
 
 
 
-
 }
-
-
 
 
 

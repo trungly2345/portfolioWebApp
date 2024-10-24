@@ -4,7 +4,7 @@ import { useState } from "react";
 interface FormValues {
     name : string
     email: string
-    company : string
+    employment : string
     message: string
 
 }
@@ -13,7 +13,9 @@ interface FormValues {
 export const useForm = ({ initialValues }: {initialValues : FormValues} ) => {
   const [values, setValues] = useState<FormValues>(initialValues);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+
+  // handles the changes for an event when a input element is being rendered or a text area element is being rendered 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
     const value: string = e.target.value; // what ever their typing
     const name: string = e.target.name;
     setValues({
